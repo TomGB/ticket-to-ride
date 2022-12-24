@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        margin: 0
+    }
+    canvas {
+      background-color: #f3f3f3;
+    }
+
+    canvas path {
+      fill: #4caf50;
+      stroke: #4caf50;
+    }
+
+    canvas path:hover {
+      fill: #ff9800;
+      stroke: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram"></div>
+  <script>
+    let nodes = [
+      { id: 'London', x: 800, y: 900 },
+      { id: 'Leeds', x: 600, y: 400 },
+      { id: 'Manchester', x: 300, y: 450 },
+      { id: 'York', x: 800, y: 300 },
+      { id: 'Birmingham', x: 500, y: 600 },
+      { id: 'Sheffield', x: 600, y: 500 },
+      { id: 'Dover', x: 900, y: 900 },
+      { id: 'Exeter', x: 200, y: 950 },
+      { id: 'Peterbourgh', x: 700, y: 500 },
+      { id: 'Newcastle', x: 800, y: 200 },
+    ];
+
+    let lines = [
+      { source: 'London', target: 'Leeds' },
+      { source: 'London', target: 'Manchester' },
+      { source: 'Leeds', target: 'Manchester' },
+      { source: 'Leeds', target: 'York' },
+      { source: 'London', target: 'York' },
+    ];
+
+    const load = () => {
+        const data = localStorage.getItem('save');
+
+        if (data) {
+            const savedData = JSON.parse(data)
+
+            lines = savedData.lines
+            nodes = savedData.nodes
+        }
+    }
+
+    load(nodes, lines)
+
+    const yOffset = 800
+    const xOffset = 400
+
+    const save = (nodes, lines) => {
+        localStorage.setItem('save', JSON.stringify({ nodes, lines}));
+    }
+
+    const dist = (a, b, c, d) => Math.sqrt((a - c)*(a-c) + (b-d)*(b-d))
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 2000;
+    canvas.height = 2000;
+    document.getElementById('diagram').appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    ctx.font = '16px Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillStyle = 'black';
+
+    ctx.translate(xOffset, yOffset);
+
+    let selectedNode = null
+    let lastSelectedNode = null
+
+    const selectNode = (node) => {
+        selectedNode = node
+        lastSelectedNode = node
+    }
+
+    const deSelectNode = (node) => {
+        selectedNode = null
+    }
+
+    var img = new Image();
+    img.src = "./map.jpg";  
+
+    var stationImg = new Image();
+    stationImg.src = "./station.png";  
+
+
+    const draw = () => {
+        ctx.clearRect(-xOffset, -yOffset, canvas.width, canvas.height);
+
+        ctx.drawImage(img,-300,50 - yOffset, 1500, 2000); 
+
+        const sectionLength = 50
+        const sectionWidth = 15
+
+        lines.forEach((line) => {
+            const source = nodes.find((node) => node.id === line.source);
+            const target = nodes.find((node) => node.id === line.target);
+
+            if (!source || !target) {
+                return
+            }
+            // ctx.beginPath();
+            // ctx.moveTo(source.x, source.y);
+            // ctx.lineTo(target.x, target.y);
+            // ctx.stroke();
+
+            const distance = dist(source.x, source.y, target.x, target.y) - 20
+
+            const numSections = Math.floor(distance / sectionLength)
+
+            const distancePadding = (distance - numSections * sectionLength) / 2
+
+            const getAngle = (cx, cy, ex, ey) => {
+                var dy = ey - cy;
+                var dx = ex - cx;
+                var theta = Math.atan2(dy, dx); // range (-PI, PI]
+                theta *= 180 / Math.PI; // rads to degs, range (-180, 180]
+                if (theta < 0) theta = 360 + theta; // range [0, 360)
+                return theta;
+            }
+
+            function stringToRandomNumber(str) {
+                // Get the ASCII code for each character in the string
+                const charCodes = str.split('').map(char => char.charCodeAt(0));
+              
+                // Sum the ASCII codes
+                const sum = charCodes.reduce((acc, code) => acc + code, 0);
+              
+                // Return a random number between 0 and the sum of the ASCII codes
+                return sum;
+              }
+              
+
+            function getColor(seed) {
+                // Define the color palette
+                const colors = [
+                    '#DE8435', '#C18FC2', '#00A5DF', '#82BD45', '#CB3028', '#FDE540', '#2B454E', '#F1F0F6', '#969C9D'
+                ];
+              
+                // Return a random color from the palette
+                return colors[Math.floor(stringToRandomNumber(seed) % colors.length)];
+              }
+
+            const color = getColor(line.source + line.target)
+
+            const color2 = getColor(line.target + line.source + "b")
+
+            const angle = getAngle(source.x, source.y, target.x, target.y)
+
+            ctx.save()
+
+            ctx.translate(source.x, source.y); // First translate the context to the center you wish to rotate around.
+            ctx.rotate(angle * Math.PI/180 ); // Then do the actual rotation.
+
+
+            ctx.strokeStyle = 'grey';
+
+            ctx.lineWidth = 2;  //define the width of the stroke line
+
+            if (line.isDouble) {
+                for (let i = 0; i < numSections; i++) {
+                    ctx.beginPath();
+                    ctx.rect(i * sectionLength + distancePadding + 10, - sectionWidth - 2, sectionLength - 5, sectionWidth);
+                    ctx.stroke();
+                    ctx.fillStyle = color
+                    ctx.fill()
+
+                    ctx.beginPath();
+                    ctx.rect(i * sectionLength + distancePadding + 10, 2, sectionLength - 5, sectionWidth);
+                    ctx.stroke();
+                    ctx.fillStyle = color2
+                    ctx.fill()
+                }
+            } else {
+                for (let i = 0; i < numSections; i++) {
+                    ctx.beginPath();
+                    ctx.rect(i * sectionLength + distancePadding + 10, - sectionWidth / 2, sectionLength - 5, sectionWidth);
+                    ctx.stroke();
+                    ctx.fillStyle = color
+                    ctx.fill()
+                }
+            }
+
+            ctx.restore()
+        });
+
+        nodes.forEach((node) => {
+
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, 10, 0, 2 * Math.PI);
+            if (selectedNode && node.id === selectedNode.id) {
+                ctx.fillStyle = "red";
+            } else {
+                ctx.fillStyle = "black";
+            }
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, 8, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.fillStyle = "black";
+
+            ctx.strokeStyle = 'white';
+
+            ctx.lineWidth = 3;  //define the width of the stroke line
+
+            if (node.name) {
+                ctx.strokeText(node.name.toUpperCase(), node.x + (node.textOnLeft ? - (ctx.measureText(node.name.toUpperCase()).width + 20) : 20), node.y + 5);
+                ctx.fillText(node.name.toUpperCase(), node.x + (node.textOnLeft ? - (ctx.measureText(node.name.toUpperCase()).width + 20) : 20), node.y + 5);    
+            }
+
+        });
+    }
+
+    const joinNodes = (node1, node2) => {
+        if (node1.id !== node2.id) {
+            const existingLineIndex = lines.findIndex(({source, target }) => {
+                return (source === node1.id && target === node2.id) || (source === node2.id && target === node1.id)
+            })
+
+            if (existingLineIndex === -1) {
+                lines.push({ source: node1.id, target: node2.id})
+            } else {
+                const line = lines[existingLineIndex]
+
+                if (line.isDouble) {
+                    lines.splice(existingLineIndex, 1)
+                } else {
+                    line.isDouble = true
+                }
+            }
+
+        }
+    }
+
+    draw()
+
+    canvas.addEventListener('mousedown', function(e) {
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left - xOffset
+        const y = e.clientY - rect.top - yOffset
+
+        const closestNode = nodes.map((node) => {
+            return { dist: dist(node.x, node.y, x, y), ...node }
+        }).sort((a, b) => a.dist - b.dist)[0]
+
+        if (closestNode.dist > 20) {
+            const newNode = { id: String(Math.random()), x: x, y: y }
+
+            const newName = prompt("Please name this station", "");
+
+            newNode.name = newName
+
+            nodes.push(newNode)
+
+            const selectedNode = newNode
+        } else {
+            if (event.shiftKey) {
+                joinNodes(lastSelectedNode, closestNode)
+            } else {
+                selectNode(closestNode)
+            }
+        }
+
+        draw()
+    }, false);
+
+    canvas.addEventListener('mouseup', function(e) {
+        deSelectNode()
+
+        save(nodes, lines)
+
+        draw()
+
+        const lineDistribution = {}
+
+        const numLines = nodes.map(node => {
+            const numberOfLines = lines.filter(({ source, target }) => source === node.id || target === node.id).length
+
+            lineDistribution[numberOfLines] = lineDistribution[numberOfLines] ? lineDistribution[numberOfLines] + 1 : 1
+        })
+
+        console.log({ "num stations": nodes.length })
+        console.log({ "distribution of lines": lineDistribution })
+    }, false);
+
+    canvas.addEventListener("mousemove", (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left - xOffset
+        const y = e.clientY - rect.top - yOffset
+
+        if (selectedNode) {
+            const movingNode = nodes.find(node => node.id === selectedNode.id)
+
+            movingNode.x = x
+            movingNode.y = y
+
+            draw()
+        }
+    })
+
+    document.addEventListener('keydown', (event) => {
+        const keyName = event.key;
+
+        if (keyName === "Enter") {
+            const nodeToEdit = nodes.find(node => node.id === lastSelectedNode.id)
+
+            const newName = prompt("Please name this station", nodeToEdit.name);
+
+            nodeToEdit.name = newName
+
+            draw()
+        }
+
+        if (keyName === "s") {
+            const nodeToEdit = nodes.find(node => node.id === lastSelectedNode.id)
+
+            nodeToEdit.textOnLeft = !nodeToEdit.textOnLeft
+
+            draw()
+        }
+
+        if (keyName === "x") {
+            const nodeIndex = nodes.findIndex(node => {
+                return node.id === lastSelectedNode.id
+            })
+            
+            nodes.splice(nodeIndex, 1)
+            
+
+            draw()
+        }
+    });
+  </script>
+</body>
+</html>
