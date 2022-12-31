@@ -23,26 +23,8 @@
 <body>
   <div id="diagram"></div>
   <script>
-    let nodes = [
-      { id: 'London', x: 800, y: 900 },
-      { id: 'Leeds', x: 600, y: 400 },
-      { id: 'Manchester', x: 300, y: 450 },
-      { id: 'York', x: 800, y: 300 },
-      { id: 'Birmingham', x: 500, y: 600 },
-      { id: 'Sheffield', x: 600, y: 500 },
-      { id: 'Dover', x: 900, y: 900 },
-      { id: 'Exeter', x: 200, y: 950 },
-      { id: 'Peterbourgh', x: 700, y: 500 },
-      { id: 'Newcastle', x: 800, y: 200 },
-    ];
-
-    let lines = [
-      { source: 'London', target: 'Leeds' },
-      { source: 'London', target: 'Manchester' },
-      { source: 'Leeds', target: 'Manchester' },
-      { source: 'Leeds', target: 'York' },
-      { source: 'London', target: 'York' },
-    ];
+    let nodes = []
+    let lines = []
 
     const load = () => {
         const data = localStorage.getItem('save');
@@ -342,6 +324,15 @@
             nodes.splice(nodeIndex, 1)
             
 
+            draw()
+        }
+
+        if (keyName === "l") {
+            const input = JSON.parse(prompt("input json"))
+
+            nodes = input.nodes
+            lines = input.lines
+            
             draw()
         }
     });

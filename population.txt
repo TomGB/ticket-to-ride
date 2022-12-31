@@ -1,0 +1,400 @@
+London	8,961,989
+Birmingham	984,333
+Liverpool	864,122
+Sheffield	685,368
+Bristol	617,280
+Glasgow	591,620
+Leicester	508,916
+Edinburgh	464,990
+Leeds	455,123
+Cardiff	447,287
+Manchester	395,515
+Stoke-on-Trent	372,775
+Coventry	359,262
+Sunderland	335,415
+Brent	329,100
+Birkenhead	325,264
+Nottingham	321,500
+Islington	319,143
+Reading	318,014
+Kingston upon Hull	314,018
+Preston	313,332
+Newport	306,844
+Swansea	300,352
+Bradford	299,310
+Southend-on-Sea	295,310
+Belfast	274,770
+Derby	270,468
+Plymouth	260,203
+Luton	258,018
+Wolverhampton	252,791
+City of Westminster	247,614
+Southampton	246,201
+Blackpool	239,409
+Milton Keynes	229,941
+Bexley	228,000
+Northampton	215,963
+Archway	215,667
+Norwich	213,166
+Dudley	199,059
+Aberdeen	196,670
+Portsmouth	194,150
+Newcastle upon Tyne	192,382
+Sutton	187,600
+Swindon	185,609
+Crawley	180,508
+Ipswich	178,835
+Wigan	175,405
+Croydon	173,314
+Walsall	172,141
+Mansfield	171,958
+Oxford	171,380
+Warrington	165,456
+Slough	163,777
+Bournemouth	163,600
+Peterborough	163,379
+Cambridge	158,434
+Doncaster	158,141
+York	153,717
+Poole	150,092
+Gloucester	150,053
+Burnley	149,422
+Huddersfield	149,017
+Telford	147,980
+Dundee	147,710
+Blackburn	146,521
+Basildon	144,859
+Middlesbrough	142,707
+Bolton	141,331
+Stockport	139,052
+Brighton	139,001
+West Bromwich	135,618
+Grimsby	134,160
+Hastings	133,422
+High Wycombe	133,204
+Tottenham	130,000
+Newcastle under Lyme	129,441
+Watford	125,707
+Saint Peters	125,370
+Burton upon Trent	122,199
+Colchester	121,859
+Eastbourne	118,219
+Exeter	117,763
+Rotherham	117,618
+Cheltenham	116,447
+Lincoln	114,879
+Chesterfield	113,057
+Chelmsford	111,511
+Mendip	110,000
+Walthamstow	109,424
+Dagenham	108,368
+Basingstoke	107,642
+Maidstone	107,627
+Sutton Coldfield	107,030
+Bedford	106,940
+Oldham	104,782
+Enfield Town	103,970
+Woking	103,932
+St Helens	102,555
+Worcester	101,659
+Gillingham	101,187
+Becontree	100,000
+Worthing	99,110
+Rochdale	97,550
+Solihull	96,267
+Royal Leamington Spa	95,172
+Romford	95,000
+Bath	94,782
+Harlow	94,365
+Nuneaton	92,698
+High Peak	92,600
+Darlington	92,363
+Southport	91,703
+Chester	90,524
+Stevenage	90,232
+Wembley	90,045
+Grays	89,755
+Harrogate	89,060
+Hartlepool	88,855
+Fulham	87,161
+Londonderry County Borough	87,153
+Cannock	86,121
+Hemel Hempstead	85,629
+St Albans	84,561
+Redditch	84,300
+South Shields	83,655
+Derry	83,652
+Weston-super-Mare	82,903
+Halifax	82,624
+Edmonton	82,000
+Beckenham	82,000
+Tamworth	81,964
+Scunthorpe	79,977
+Stockton-on-Tees	79,957
+Wakefield	78,978
+Carlisle	78,470
+Gateshead	77,649
+Lisburn	77,506
+Putney	77,140
+Fylde	76,500
+Paisley	76,220
+Bracknell	76,103
+Battersea	75,651
+Crewe	75,556
+Chatham	75,509
+Hove	75,174
+Aylesbury	74,748
+East Kilbride	74,740
+Canary Wharf	73,390
+Rugby	73,150
+Salford	72,750
+Purley	72,000
+Guildford	71,873
+Shrewsbury	71,715
+Peckham	71,552
+Barnsley	71,447
+Lowestoft	70,945
+Gosport	70,793
+Uxbridge	70,000
+Southall	70,000
+Stafford	69,217
+Royal Tunbridge Wells	68,910
+Wimbledon	68,187
+Stamford Hill	68,050
+Ellesmere Port	67,768
+Rossendale	67,400
+Folkestone	66,429
+Brixton	66,300
+Hounslow	66,292
+Chingford	66,211
+Finchley	65,812
+Wrexham	65,692
+Torquay	65,388
+Cricklewood	65,000
+Maidenhead	64,831
+Kingswood	64,793
+Taunton	64,621
+Waterlooville	64,350
+Macclesfield	63,954
+Bognor Regis	63,885
+Newtownabbey	63,860
+Kettering	63,675
+Buckley	63,576
+Great Yarmouth	63,434
+Mitcham	63,393
+Runcorn	62,872
+Ashford	62,787
+Tonypandy	62,545
+Scarborough	61,749
+Widnes	61,464
+Aldershot	61,339
+Bury	61,044
+Barking	61,000
+Castleford	60,509
+Hereford	60,415
+Bangor	60,385
+Stroud	60,155
+Margate	60,134
+Chelsea	60,000
+Loughborough	59,932
+Welwyn Garden City	59,910
+Farnborough	59,902
+Rhondda	59,450
+Craigavon	59,236
+Wallasey	58,794
+Littlehampton	58,714
+Bridgend	58,380
+Streatham	58,055
+Bootle	57,791
+Weymouth	57,691
+Fareham	57,390
+Morley	57,385
+Cheshunt	57,374
+Kidderminster	57,059
+Corby	56,810
+Dartford	56,694
+Castlereagh	56,679
+Dewsbury	56,640
+Livingston	56,570
+Stourbridge	56,284
+Sale	55,689
+Halesowen	55,265
+Canterbury	55,240
+South Croydon	55,198
+Huyton	54,738
+Leytonstone	54,696
+Barry	54,673
+Gravesend	54,263
+Eastleigh	54,225
+Meikle Earnock	54,080
+Acton	53,689
+Washington	53,526
+Braintree	53,477
+Hamilton	53,200
+Brentwood	52,586
+Esher	52,392
+Crosby	52,140
+Reigate	52,123
+Dunstable	51,973
+Morecambe	51,644
+Cumbernauld	51,610
+Redhill	51,559
+Horsham	51,472
+Staines	51,040
+Batley	50,807
+Wellingborough	50,577
+Clacton-on-Sea	50,548
+Dunfermline	50,380
+Bletchley	50,193
+Keighley	50,171
+Hayes	50,000
+Paignton	49,886
+Llanelli	49,591
+Kirkcaldy	49,460
+Bromsgrove	49,117
+Eltham	48,964
+Sittingbourne	48,948
+South Benfleet	48,824
+Banbury	48,651
+West Bridgford	48,314
+Morden	48,233
+Cwmbran	48,157
+Long Eaton	47,898
+Durham	47,785
+Northwich	47,421
+Ayr	47,190
+Perth	47,180
+Lancaster	47,162
+Tipton	47,000
+Inverness	46,870
+Kilmarnock	46,350
+Banstead	46,280
+Neath	46,126
+King's Lynn	46,093
+Winchester	46,074
+Barrow in Furness	45,865
+Yeovil	45,784
+Middleton	45,589
+Havant	45,574
+Carshalton	45,525
+Hinckley	45,249
+Catford	44,905
+Salisbury	44,748
+Pontefract	44,710
+Willesden	44,295
+Coatbridge	43,970
+Sutton in Ashfield	43,912
+Grantham	43,833
+Merthyr Tydfil	43,820
+Great Sankey	43,793
+Greenock	43,690
+Ashton-under-Lyne	43,675
+Leigh	43,626
+Leatherhead	43,544
+Letchworth Garden City	43,529
+Newark on Trent	43,363
+Worksop	43,252
+Bury St Edmunds	42,812
+Kirkby	42,744
+Wallsend	42,739
+Redruth	42,690
+Welling	42,500
+Christchurch	42,396
+Andover	42,276
+Stretford	41,953
+Dover	41,709
+Hatfield	41,677
+Altrincham	41,548
+Coity	41,352
+Newburn	41,347
+Boston	41,340
+Holloway	41,329
+Lytham St Annes	41,327
+Bridgwater	41,276
+Urmston	41,198
+Wokingham	41,143
+Swadlincote	40,960
+Trowbridge	40,952
+Prescot	40,889
+Bexhill-on-Sea	40,478
+Bloxwich	40,000
+Ewell	39,994
+North Shields	39,747
+Shepherds Bush	39,724
+Glenrothes	39,100
+Skelmersdale	38,944
+Fleet	38,726
+Abingdon	38,676
+Tonbridge	38,657
+Ramsgate	38,624
+Ilkeston	38,587
+Coalville	38,245
+Canvey Island	38,170
+Surbiton	38,158
+Whitley Bay	38,055
+Greenford	38,000
+Arnold	37,873
+Houghton-Le-Spring	37,840
+Bishops Stortford	37,838
+Leyland	37,614
+Rushden	37,584
+Leighton Buzzard	37,469
+Yeadon	37,379
+Blyth	37,339
+Eccles	37,275
+Redcar	37,203
+Airdrie	37,130
+Heston	37,045
+Peterlee	37,015
+Farnham	36,971
+Chester-le-Street	36,917
+Great Malvern	36,770
+Stratford	36,666
+Herne Bay	36,642
+Wilmslow	36,617
+Newton Abbot	36,474
+Stirling	36,440
+Mangotsfield	36,427
+Billericay	36,338
+Chipping Sodbury	36,108
+Hitchin	36,099
+Walkden	35,937
+Tyldesley	35,932
+Chippenham	35,800
+Billingham	35,708
+Pontypool	35,686
+Accrington	35,318
+Falkirk	35,310
+Briton Ferry	35,179
+Hoddesdon	35,174
+Bridlington	35,154
+Bentley	34,821
+Exmouth	34,432
+Yate	34,406
+Felling	34,355
+Chiswick	34,337
+Colwyn Bay	34,284
+Radcliffe	34,239
+Totton	34,169
+Chorley	33,888
+Bicester	33,846
+Haywards Heath	33,845
+Irvine	33,740
+Wigston Magna	33,720
+Wednesfield	33,555
+Strood	33,381
+Windsor	33,348
+Dumfries	33,280
+Glossop	33,243
+Cramlington	33,180
+Pudsey	33,109
+Ebbw Vale	33,068
+Newbury	33,065
+Wickford	32,975
+Washwood Heath	32,921
+Lichfield	32,877
+Brighouse	32,872
+Darwen	32,566
+Wisbech	32,489
+Aston	32,286
+Borehamwood	32,176

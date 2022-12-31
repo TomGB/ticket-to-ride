@@ -1,0 +1,37 @@
+<div id="div">asdf</div>
+    <script>
+        const div = document.getElementById("div")
+
+        const stemLength = 150
+        const stemWidth = 40
+        const tipWidth = 160
+        const curveSize = 50
+
+        const path = `
+            M 200 0
+            l ${tipWidth / 2} 0
+            v 10
+            s -${curveSize} 0, -${curveSize} ${curveSize}
+            v ${stemLength}
+            h -${tipWidth / 2 - curveSize}
+        `
+
+        div.outerHTML += `
+            <svg width="400" height="400">
+                <path d="${path}" />
+                <path d="${path}" transform="rotate(90, 200, 200)" />
+                <path d="${path}" transform="rotate(180, 200, 200)" />
+                <path d="${path}" transform="rotate(270, 200, 200)" />
+                <path d="${path}" transform="scale(-1, 1) translate(-400, 0)"/>
+                <path d="${path}" transform="scale(-1, 1) translate(-400, 0) rotate(90, 200, 200)" />
+                <path d="${path}" transform="scale(-1, 1) translate(-400, 0) rotate(180, 200, 200)" />
+                <path d="${path}" transform="scale(-1, 1) translate(-400, 0) rotate(270, 200, 200)" />
+            </svg>
+        `;
+
+   </script>
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->

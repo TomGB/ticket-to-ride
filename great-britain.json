@@ -1,0 +1,372 @@
+{
+	"nodes": [
+		{
+			"id": "London",
+			"x": 785,
+			"y": 804,
+			"name": "Kings Cross",
+			"textOnLeft": false
+		},
+		{
+			"id": "Leeds",
+			"x": 596,
+			"y": 189,
+			"name": "Leeds",
+			"textOnLeft": false
+		},
+		{
+			"id": "Manchester",
+			"x": 467,
+			"y": 330,
+			"name": "Manchester",
+			"textOnLeft": false
+		},
+		{ "id": "York", "x": 669, "y": 142.5, "name": "York" },
+		{
+			"id": "Birmingham",
+			"x": 517,
+			"y": 633,
+			"name": "Birmingham",
+			"textOnLeft": true
+		},
+		{
+			"id": "Sheffield",
+			"x": 639,
+			"y": 313,
+			"name": "Sheffield",
+			"textOnLeft": true
+		},
+		{
+			"id": "Dover",
+			"x": 1022,
+			"y": 886.5,
+			"name": "Dover",
+			"textOnLeft": false
+		},
+		{
+			"id": "Exeter",
+			"x": 275,
+			"y": 899,
+			"name": "Exeter",
+			"textOnLeft": true
+		},
+		{
+			"id": "Peterbourgh",
+			"x": 773.6166687011719,
+			"y": 516.5,
+			"name": "Peterborough",
+			"textOnLeft": false
+		},
+		{ "id": "Newcastle", "x": 599, "y": -13, "name": "Newcastle" },
+		{
+			"id": "0.5227547369735884",
+			"x": 545,
+			"y": 939,
+			"name": "Southampton",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.5686659068465024",
+			"x": 292,
+			"y": 301.5,
+			"name": "Liverpool",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.6147774764178207",
+			"x": 408,
+			"y": 783.5,
+			"name": "Bristol",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.9350097216846699",
+			"x": 389,
+			"y": 445,
+			"name": "Crewe",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.583643666336369",
+			"x": 280,
+			"y": 370,
+			"name": "Chester",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.6173552017028292",
+			"x": 361,
+			"y": -10,
+			"name": "Carlisle",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.11621978174585312",
+			"x": 602,
+			"y": 823,
+			"name": "Reading",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.46477184179598996",
+			"x": 633,
+			"y": 487,
+			"name": "Derby",
+			"textOnLeft": true
+		},
+		{ "id": "0.0312602765408051", "x": 726, "y": 323, "name": "Doncaster" },
+		{
+			"id": "0.06402970857237245",
+			"x": 657,
+			"y": 663.5,
+			"name": "Leicester"
+		},
+		{
+			"id": "0.4182526194093915",
+			"x": 366,
+			"y": 180,
+			"name": "Preston",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.4749270967373871",
+			"x": 955,
+			"y": 445,
+			"name": "Norwich",
+			"textOnLeft": false
+		},
+		{
+			"id": "0.519928164920482",
+			"x": 954.3999938964844,
+			"y": 579.25,
+			"name": "Ipswich",
+			"textOnLeft": false
+		},
+		{
+			"id": "0.9876300569333898",
+			"x": 300,
+			"y": 546,
+			"name": "Shrewsbury",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.43216568713905523",
+			"x": 766,
+			"y": 969.5999755859375,
+			"name": "Brighton"
+		},
+		{
+			"id": "0.056956746050499496",
+			"x": 476.6166687011719,
+			"y": 458.5,
+			"name": "Stoke-on-Trent"
+		},
+		{
+			"id": "0.19530866687254544",
+			"x": 276,
+			"y": 728,
+			"name": "Cardiff",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.6607729530922514",
+			"x": 753,
+			"y": 833.5,
+			"name": "Paddington",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.7955314693227481",
+			"x": 760,
+			"y": 811.5,
+			"name": "Euston",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.037131423779916295",
+			"x": 770,
+			"y": 846.5999755859375,
+			"name": "Waterloo",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.5283485045405812",
+			"x": 792,
+			"y": 847.5999755859375,
+			"name": "London Bridge",
+			"textOnLeft": false
+		},
+		{
+			"id": "0.5392440852888735",
+			"x": 554,
+			"y": 699.5,
+			"name": "Coventry",
+			"textOnLeft": false
+		},
+		{
+			"id": "0.5614708276180966",
+			"x": 459,
+			"y": -183.5,
+			"name": "Edinburgh"
+		},
+		{
+			"id": "0.26560038362179617",
+			"x": 357,
+			"y": -218,
+			"name": "Stirling",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.7750400005054967",
+			"x": 228,
+			"y": -143,
+			"name": "Glasgow",
+			"textOnLeft": true
+		},
+		{ "id": "0.6590087186147735", "x": 430, "y": -311, "name": "Dundee" },
+		{
+			"id": "0.45572765829042283",
+			"x": 276,
+			"y": -500.5,
+			"name": "Inverness",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.6019445198749203",
+			"x": 484,
+			"y": -422.5,
+			"name": "Aberdeen"
+		},
+		{
+			"id": "0.9403942740169386",
+			"x": 360,
+			"y": -291,
+			"name": "Perth",
+			"textOnLeft": true
+		},
+		{
+			"id": "0.16388285307588368",
+			"x": 438,
+			"y": 698.5,
+			"name": "Gloucester",
+			"textOnLeft": true
+		}
+	],
+	"lines": [
+		{ "source": "Leeds", "target": "Manchester" },
+		{ "source": "Leeds", "target": "York" },
+		{ "source": "Sheffield", "target": "Leeds" },
+		{ "source": "0.583643666336369", "target": "Manchester" },
+		{ "source": "Newcastle", "target": "York", "isDouble": true },
+		{ "source": "Manchester", "target": "0.5686659068465024" },
+		{ "source": "0.9350097216846699", "target": "0.583643666336369" },
+		{ "source": "0.9350097216846699", "target": "Manchester" },
+		{
+			"source": "0.9350097216846699",
+			"target": "Birmingham",
+			"isDouble": true
+		},
+		{ "source": "0.6173552017028292", "target": "Newcastle" },
+		{ "source": "Leeds", "target": "0.6173552017028292" },
+		{
+			"source": "0.6147774764178207",
+			"target": "0.11621978174585312",
+			"isDouble": true
+		},
+		{ "source": "0.5227547369735884", "target": "0.11621978174585312" },
+		{ "source": "Sheffield", "target": "0.46477184179598996" },
+		{ "source": "0.46477184179598996", "target": "Peterbourgh" },
+		{ "source": "0.46477184179598996", "target": "Birmingham" },
+		{ "source": "Sheffield", "target": "Manchester" },
+		{ "source": "York", "target": "0.0312602765408051", "isDouble": true },
+		{ "source": "Leeds", "target": "0.0312602765408051" },
+		{ "source": "0.0312602765408051", "target": "Sheffield" },
+		{
+			"source": "0.0312602765408051",
+			"target": "Peterbourgh",
+			"isDouble": true
+		},
+		{ "source": "0.06402970857237245", "target": "Birmingham" },
+		{ "source": "0.06402970857237245", "target": "Peterbourgh" },
+		{ "source": "0.06402970857237245", "target": "0.46477184179598996" },
+		{ "source": "0.4749270967373871", "target": "0.519928164920482" },
+		{ "source": "0.4749270967373871", "target": "Peterbourgh" },
+		{ "source": "0.11621978174585312", "target": "Exeter" },
+		{ "source": "0.9350097216846699", "target": "0.9876300569333898" },
+		{ "source": "0.583643666336369", "target": "0.9876300569333898" },
+		{ "source": "0.6173552017028292", "target": "0.4182526194093915" },
+		{ "source": "0.4182526194093915", "target": "0.5686659068465024" },
+		{ "source": "0.4182526194093915", "target": "Leeds" },
+		{ "source": "0.519928164920482", "target": "Peterbourgh" },
+		{ "source": "0.43216568713905523", "target": "0.5227547369735884" },
+		{ "source": "0.9876300569333898", "target": "Birmingham" },
+		{ "source": "Manchester", "target": "0.056956746050499496" },
+		{ "source": "0.056956746050499496", "target": "Birmingham" },
+		{ "source": "0.056956746050499496", "target": "0.9350097216846699" },
+		{
+			"source": "0.19530866687254544",
+			"target": "0.6147774764178207",
+			"isDouble": true
+		},
+		{ "source": "Peterbourgh", "target": "London", "isDouble": true },
+		{ "source": "0.519928164920482", "target": "London" },
+		{
+			"source": "0.6607729530922514",
+			"target": "0.11621978174585312",
+			"isDouble": true
+		},
+		{ "source": "0.037131423779916295", "target": "0.5227547369735884" },
+		{ "source": "0.037131423779916295", "target": "0.43216568713905523" },
+		{ "source": "0.5283485045405812", "target": "Dover" },
+		{
+			"source": "Birmingham",
+			"target": "0.5392440852888735",
+			"isDouble": true
+		},
+		{
+			"source": "0.7955314693227481",
+			"target": "0.5392440852888735",
+			"isDouble": true
+		},
+		{ "source": "0.11621978174585312", "target": "0.5392440852888735" },
+		{ "source": "0.7750400005054967", "target": "0.6173552017028292" },
+		{
+			"source": "0.5614708276180966",
+			"target": "Newcastle",
+			"isDouble": true
+		},
+		{ "source": "0.9403942740169386", "target": "0.26560038362179617" },
+		{ "source": "0.5614708276180966", "target": "0.6590087186147735" },
+		{ "source": "0.6590087186147735", "target": "0.9403942740169386" },
+		{
+			"source": "0.9403942740169386",
+			"target": "0.45572765829042283",
+			"isDouble": true
+		},
+		{ "source": "0.6590087186147735", "target": "0.6019445198749203" },
+		{ "source": "0.6019445198749203", "target": "0.45572765829042283" },
+		{ "source": "0.26560038362179617", "target": "0.7750400005054967" },
+		{ "source": "0.9876300569333898", "target": "0.19530866687254544" },
+		{ "source": "0.06402970857237245", "target": "London" },
+		{ "source": "Dover", "target": "London" },
+		{ "source": "Exeter", "target": "0.6147774764178207" },
+		{ "source": "0.5614708276180966", "target": "0.6173552017028292" },
+		{ "source": "0.16388285307588368", "target": "Birmingham" },
+		{ "source": "0.16388285307588368", "target": "0.19530866687254544" },
+		{ "source": "0.16388285307588368", "target": "0.6147774764178207" },
+		{ "source": "0.16388285307588368", "target": "0.11621978174585312" },
+		{ "source": "0.9350097216846699", "target": "0.5686659068465024" },
+		{
+			"source": "0.5614708276180966",
+			"target": "0.7750400005054967",
+			"isDouble": true
+		},
+		{ "source": "0.43216568713905523", "target": "Dover" },
+		{
+			"source": "0.5614708276180966",
+			"target": "0.9403942740169386",
+			"isDouble": true
+		},
+		{ "source": "0.26560038362179617", "target": "0.5614708276180966" }
+	]
+}
